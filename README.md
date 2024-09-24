@@ -1,10 +1,14 @@
 # 1minAI - Auto Login
 
-Automatically connect to app.1min.ai using Python, Selenium and Chromedriver to get free credits every day :)
+Automatically connect to app.1min.ai using Python, Selenium and a Web Driver to get free credits every day :)
+
+By default, it uses the Chrome Webriver
 
 ```
-python autologin.py [--headless]
+python autologin.py [--firefox|--chrome] [--headless] [--debug]
 ```
+
+*Should works with Python >= 3.10*
 
 ## Installation
 
