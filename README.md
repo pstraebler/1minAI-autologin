@@ -24,11 +24,19 @@ $ pip install -r requirements.txt
 
 ### Chrome webdriver
 
-This script uses the Chrome Webdriver (and therefore, Google Chrome). 
+By default, this script uses the Chrome Webdriver (and therefore, Google Chrome). 
 
 You can download it from [Chrome for Testing availability](https://googlechromelabs.github.io/chrome-for-testing/) and put the binary *chromedriver* in your `$PATH`
 
 The Chromedrive must match the version of Google Chrome installed on your computer.  
+
+### Firefox webdriver (Gecko)
+
+You can also use Firefox webdriver by adding the `--firefox` option.
+
+Depending on the OS you're using, gecko webdriver may already be provided by the installed Firefox package.
+If not, you can download it from [Github](https://github.com/mozilla/geckodriver), and install the binary *geckodriver* in your `$PATH`.
+
 
 ### Env file
 
