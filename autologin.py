@@ -23,6 +23,11 @@ if args.debug:
     print('Script parameters : ')
     print(args)
 
+#check if credentials has been provided
+if not os.getenv("USERNAME") or not os.getenv("PASSWORD"):
+      print("Please fill credentials in the .env file")
+      exit(1)
+
 #le driver par défaut est chrome
 if args.chrome and args.firefox:
       print('You\'re weird. I\'m going to use Chrome.')
