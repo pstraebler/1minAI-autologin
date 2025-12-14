@@ -84,7 +84,8 @@ driver.find_element(By.ID, "login_password").send_keys(os.getenv("PASSWORD"))
 time.sleep(1)
 
 #login
-driver.find_element(By.CSS_SELECTOR, "button.ant-btn.css-b9n3i9.ant-btn-primary.ant-btn-color-primary.ant-btn-variant-solid[type='submit']").click()
+driver.find_element(By.XPATH, '/html/body/div[3]/div/div[2]/div/div[1]/div/div[2]/div[2]/div/form/div[3]/div/div/div/div/button').click()
+#driver.find_element(By.CSS_SELECTOR, "button.ant-btn.css-b9n3i9.ant-btn-primary.ant-btn-color-primary.ant-btn-variant-solid[type='submit']").click()
 
 time.sleep(5)
 
