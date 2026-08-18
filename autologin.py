@@ -7,7 +7,9 @@ import os
 import time
 import argparse
 
-load_dotenv()
+# Explicitly let the project .env values override OS environment variables
+# (e.g. Linux's default USERNAME variable).
+load_dotenv(override=True)
 parser = argparse.ArgumentParser()
 
 #liqte des arguments possibe
